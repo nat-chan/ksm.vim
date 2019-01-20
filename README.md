@@ -14,7 +14,7 @@ Move the current line of Vim to the bar selected by K-Shoot Editor
 
 ### For [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
-" add this line to your .vimrc or init.vim
+" add this line to your _vimrc or init.vim
 Plug 'nat-chan/ksm.vim'
 ```
 
