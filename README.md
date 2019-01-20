@@ -19,7 +19,7 @@ Plug 'nat-chan/ksm.vim'
 ```
 
 ### For manual installation
-Extract the files and put ```autoload, plugin``` in ```%USERPROFILE%\_vim\``` or ```%LOCALAPPDATA%\nvim\```.
+Extract the files and put ```autoload, plugin``` in ```%USERPROFILE%\vimfiles\``` or ```%LOCALAPPDATA%\nvim\```.
 
 ### Requirements
 ```vim
@@ -27,5 +27,5 @@ Extract the files and put ```autoload, plugin``` in ```%USERPROFILE%\_vim\``` or
 ```
 
 ```python
-pip install -r requirements.txt
+pip install numpy pypiwin32
 ```

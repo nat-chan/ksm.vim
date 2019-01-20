@@ -36,9 +36,9 @@ class Ksm():
     b"s\x90\xad*\x1e\xd1z\xa5\xf7\xbd\xd4:\x8b7\x83h\xccYk\x90-\x03\xe6\x9bv\xfe\x1f\x8c\xbbt\xe5G\xa5\x86*4\xf53&\x82;\x93{"
     ), dtype='uint8').reshape(len(TRAIN_LABEL), FONT_HIGHT*FONT_WIDTH*FONT_CHANNEL)
     def __init__(self):
-        self.chart_path = vim.call("expand","%:p")
-        self.editor_path = abspath(vim.call("expand","%:p:h:h:h:h")+"\\editor.exe")
-        self.mania_path = abspath(vim.call("expand","%:p:h:h:h:h")+"\\kshootmania.exe")
+        self.chart_path = vim.eval('expand("%:p")')
+        self.editor_path = abspath(vim.eval('expand("%:p:h:h:h:h")')+"\\editor.exe")
+        self.mania_path = abspath(vim.eval('expand("%:p:h:h:h:h")')+"\\kshootmania.exe")
         assert exists(self.editor_path) and exists(self.mania_path), \
                "譜面ファイルはK-SHoot Maniaの管理化にある必要がある"
 
