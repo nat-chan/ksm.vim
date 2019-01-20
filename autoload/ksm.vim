@@ -22,7 +22,6 @@ import sys
 from os.path import abspath, exists
 import subprocess
 import time
-from PIL import Image
 import zlib
 import re
 
@@ -112,7 +111,6 @@ class Ksm():
                 jump_tag.append(i+1)
             if count_bar > bars:
                 break
-        print(jump_tag)
         vim.command(':'+str(jump_tag[len(jump_tag)*(num-1)//denom]))
 
     def goto(self):

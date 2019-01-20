@@ -1,0 +1,12 @@
+win32con
+win32gui
+win32api
+win32ui
+win32process
+os
+sys
+re
+time
+zlib
+subprocess
+numpy
